@@ -11,3 +11,23 @@
         <input class="btn btn-secondary" type="submit" value="Send">
     </div>
 </form>
+
+<?php 
+if(isset($_GET["r"])){
+    $r = $_GET["r"];
+    if($r == "ok"){
+        //MOSTRAR ALERT: Message has been sent
+        echo 
+        '<div class="alert alert-success" role="alert">
+            Message has been sent
+        </div>';
+       
+    }else if($r == "error"){
+        //MOSTRAR ALERT: Error sending message, try again later
+        ?>
+        <div class="alert alert-danger" role="alert">
+            Error sending message, try again later
+        </div>
+        <?php
+    }
+}?>

@@ -1,0 +1,2 @@
+- Ficheiro email_ok.php vamos gravar dados do email enviado na base de dados
+- Quando entro na página do contacto e estou autenticado, campo de email preenchido automaticamente e bloqueado, mas com a possibilidade de desbloquear e editar
