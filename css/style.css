@@ -1,0 +1,9 @@
+.active{
+    text-decoration: underline;
+}
+
+footer{
+    text-align: center;
+    color:white;
+    padding: 10px;
+}
