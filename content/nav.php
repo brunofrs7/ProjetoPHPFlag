@@ -11,13 +11,16 @@ if(isset($_GET['p'])){
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link <?php if($page=="home") echo "active";?>" aria-current="page" href="index.php?p=home">Página Inicial</a>
+                    <a class="nav-link <?php if($page=="home") echo "active";?>" aria-current="page" href="index.php?p=home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link <?php if($page=="courses") echo "active";?>" href="index.php?p=courses">Cursos</a>
+                    <a class="nav-link <?php if($page=="courses") echo "active";?>" href="index.php?p=courses">Courses</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link <?php if($page=="register") echo "active";?>" href="index.php?p=register">Registo</a>
+                    <a class="nav-link <?php if($page=="contact") echo "active";?>" href="index.php?p=contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link <?php if($page=="register") echo "active";?>" href="index.php?p=register">Register</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link <?php if($page=="login") echo "active";?>" href="index.php?p=login">Login</a>
