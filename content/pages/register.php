@@ -1,5 +1,5 @@
 <h1>Register</h1>
-<form action="" method="post">
+<form action="db/user/register.php" method="post">
   <div class="mb-3">
     <label for="email" class="form-label">Email address</label>
     <input type="email" class="form-control" id="email" name="email" placeholder="Insert your email">
