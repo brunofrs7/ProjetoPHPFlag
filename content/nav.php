@@ -1,4 +1,5 @@
 <?php
+session_start();
 if(isset($_GET['p'])){
     $page = $_GET['p'];
 }
@@ -19,12 +20,27 @@ if(isset($_GET['p'])){
                 <li class="nav-item">
                     <a class="nav-link <?php if(isset($_GET['p']) && $page=="contact") echo "active";?>" href="index.php?p=contact">Contact</a>
                 </li>
+
+                <?php if(!isset($_SESSION["email"])){?>
+
                 <li class="nav-item">
                     <a class="nav-link <?php if(isset($_GET['p']) && $page=="register") echo "active";?>" href="index.php?p=register">Register</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link <?php if(isset($_GET['p']) && $page=="login") echo "active";?>" href="index.php?p=login">Login</a>
+                </li> 
+
+                <?php } else { ?>
+                
+                <li class="nav-item">
+                    <a class="nav-link <?php if(isset($_GET['p']) && $page=="account") echo "active";?>" href="index.php?p=account">Account</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link <?php if(isset($_GET['p']) && $page=="logout") echo "active";?>" href="index.php?p=logout">Logout</a>
+                </li>
+                
+                <?php }?>
+
             </ul>
         </div>
     </div>
