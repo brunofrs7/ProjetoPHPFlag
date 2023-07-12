@@ -31,7 +31,11 @@ if(isset($_GET['p'])){
                 </li> 
 
                 <?php } else { ?>
-                
+                    <?php if($_SESSION['usertype_id'] == 1) {?>
+                <li class="nav-item">
+                    <a class="nav-link <?php if(isset($_GET['p']) && $page=="administration") echo "active";?>" href="index.php?p=administration">Administration</a>
+                </li>
+                    <?php } ?>
                 <li class="nav-item">
                     <a class="nav-link <?php if(isset($_GET['p']) && $page=="account") echo "active";?>" href="index.php?p=account">Account</a>
                 </li>

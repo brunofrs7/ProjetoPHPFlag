@@ -7,3 +7,11 @@ footer{
     color:white;
     padding: 10px;
 }
+
+#account_cancel_save, .account_confirm_password{
+    display: none;
+}
+
+#email, #username, #password, #password1{
+    pointer-events: none; 
+}
