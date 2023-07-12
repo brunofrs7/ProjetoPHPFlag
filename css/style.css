@@ -8,10 +8,10 @@ footer{
     padding: 10px;
 }
 
-#account_cancel_save, .account_confirm_password{
+#account_cancel_save, #account_confirm_password, #account_confirm_password1 {
     display: none;
 }
 
-#email, #username, #password, #password1{
+#account_email, #account_username, #account_password, #account_password1{
     pointer-events: none; 
 }

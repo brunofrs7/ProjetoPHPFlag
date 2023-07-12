@@ -1,2 +1,17 @@
-- Ficheiro email_ok.php vamos gravar dados do email enviado na base de dados
-- Quando entro na página do contacto e estou autenticado, campo de email preenchido automaticamente e bloqueado, mas com a possibilidade de desbloquear e editar
+LOGIN
+    - recuperação de password antes de autenticar
+    - manter sessão check me out
+
+ACCOUNT
+    - carregar imagem do utilizador
+    - alterar imagem do utilizador
+
+ADMINISTRATION
+    - CRUD: usertype, user, course
+    - implementar mudança de usertype de um user
+    - implementar ban de user
+    - reset de password de user
+    - implementar relacionamento entre user e courses
+
+COURSES
+
