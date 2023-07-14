@@ -31,4 +31,15 @@ include('db/usertype/selectbyid.php');
         <div class="col text-end"><a href="db/usertype/delete.php?id=<?= $row['id']?>" class="btn btn-danger">Delete</a></div>
     </div>
     </form>
+
+    <?php
+        if(isset($_GET['r'])){
+            if($_GET['r'] == "usertypedependencydeleteerror"){?>
+                <div class="alert alert-danger mt-4" role="alert">
+                    Dependency error: This usertype has dependency
+                </div><?php
+            }
+        }
+    ?>
 </div>
+

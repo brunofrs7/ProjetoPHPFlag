@@ -1,24 +1,16 @@
 <?php
-session_start();
-$id = $_SESSION['id'];
-$email = $_POST['account_email'];
-$user = $_POST['account_username'];
-$passwd = $_POST['account_password'];
-$passwd1 = $_POST['account_password1'];
 
-if($passwd != $passwd1){
-    header('Location: ../../index.php?p=account&r=passerror');
-    exit();
-}
+$id = $_POST['usertype_details_id'];
+$name = $_POST['usertype_details_name'];
 
 include('../conn.php');
 
-$sql = "UPDATE user SET email='$email', username='$user', password= MD5('$passwd') WHERE id=$id";
+$sql = "UPDATE usertype SET name='$name' WHERE id=$id";
 
 if ($conn->query($sql) === TRUE) {
-    header('Location: ../../index.php?p=account&r=updateok');
+    header('Location: ../../index.php?p=usertype_details&id='.$id.'&r=updateok');
 } else {
-    header('Location: ../../index.php?p=account&r=updateerror');
+    header('Location: ../../index.php?p=usertype_details&id='.$id.'&r=updateerror');
 }
 
 $conn->close();

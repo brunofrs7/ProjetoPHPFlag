@@ -18,7 +18,6 @@ if ($result->num_rows > 0) {
                 <div class="col text-center mb-1"><a href="index.php?p=usertype_details&id=<?=$row['id']?>" class="btn btn-primary">SELECT</a></div>
                 <div class="col text-center mb-1"><?=$row['id']?></div>
                 <div class="col text-center mb-1"><?=$row['name']?></div>
-                
             </div>
 <?php
     }
