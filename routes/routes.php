@@ -12,6 +12,7 @@ if(isset($_GET['p'])){
     else if(isset($_SESSION['usertype_id']) && $_SESSION['usertype_id'] == 1){
         if($page == "administration")                           include('content/pages/administration.php');
         else if($page == "usertype_details")                    include('content/pages/usertype_details.php');
+        else if($page == "user_details")                        include('content/pages/user_details.php');
     }
     else                                                        include('content/pages/404.php');
 }else{

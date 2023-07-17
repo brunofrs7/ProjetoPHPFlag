@@ -12,6 +12,29 @@ ADMINISTRATION
     - implementar ban de user
     - reset de password de user
     - implementar relacionamento entre user e courses
+    - adicionar na administration criação de usertype, user, courses...
 
 COURSES
+
+
+ADMINISTRATION USER
+    - validar a tabela e os dados de forma a não permitir ações "destrutivas" com o admin
+    - na tabela apresentar nome do usertype em vez do ID
+    - na tabela personalizar a apresentação da imagem do utilizador
+    - na tabela -> ban com fontawesome
+
+------------------------------------------------------------------------
+
+ADMINISTRATION USER STEP-BY-STEP
+
+1. Criar ficheiro db/user/selectAll.php para puxar todo o conteúdo dos user da BD e apresentar em tabela
+    1.1. Personalizar o carregamento da imagem, consoante conteúdo da base de dados
+2. Na página administration.php incluir o ficheiro db/user/selectAll.php para carregar a tabela de utilizadores
+3. Criar página user_details.php
+4. Criar rota para incluir user_details.php (rota com validação de se utilizador está autenticado, se é admin e se a pagina a abrir é user_details)
+5. Criar ficheiro db/user/admin_update.php para editar dados de user
+6. Criar ficheiro db/user/admin_delete.php para apagar dados de user
+7. Na tabela da página administration.php, adicionar opção de Insert
+
+
 
