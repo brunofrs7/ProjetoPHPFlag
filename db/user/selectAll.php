@@ -30,8 +30,8 @@ if ($result->num_rows > 0) {
                 <div class="col text-center mb-1">
                     <?php if ($row['image'] == "") { ?>
                         <img class="img_table" src="img/default.png" alt="">
-                    <?php } else { //substituir por imagem do utilizador ?>
-                        <img class="img_table" src="img/default.png" alt="">
+                    <?php } else { ?>
+                        <img class="img_table" src="img/users/<?=$row['image']?>" alt="">
                     <?php } ?>
                 </div>
                 <div class="col text-center mb-1"><?= $row['usertype_id'] ?></div>

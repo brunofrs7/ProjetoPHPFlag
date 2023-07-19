@@ -19,3 +19,6 @@ footer{
     width: 50px;
     height: 50px;
 }
+#user_details_new_ban_id{
+    display: none;
+}
