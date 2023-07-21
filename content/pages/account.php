@@ -8,8 +8,13 @@ echo $row['username'];
 <div class="container-fluid">
     <div class="row">
         <div class="col-12 col-md-6 text-center">
-            <img src="img/default.png" alt=""><br>
-            <button class="btn btn-secondary mt-2">Change image</button>
+            <?php if ($row['image'] == "") { ?>
+                <img class="img_account" src="img/default.png" alt="">
+            <?php } else { ?>
+                <img class="img_account" src="img/users/<?=$row['image']?>" alt="">
+            <?php } ?>
+            <br>
+            <button type="button" class="btn btn-secondary mt-2" data-bs-toggle="modal" data-bs-target="#modalChangeImage">Change image</button>
         </div>
         <div class="col-12 col-md-6">
             <form action="db/user/update.php" method="post">
@@ -60,3 +65,4 @@ echo $row['username'];
         </div>
     </div>
 </div>
+<?php include('insertModal/modalChangeImage.php')?>

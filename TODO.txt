@@ -7,21 +7,11 @@ ACCOUNT
     - alterar imagem do utilizador
 
 ADMINISTRATION
-    - CRUD: usertype, user, course
-    - implementar mudança de usertype de um user
-    - implementar ban de user
-    - reset de password de user
+    - CRUD: course
     - implementar relacionamento entre user e courses
-    - adicionar na administration criação de usertype, user, courses...
 
 COURSES
 
-
-ADMINISTRATION USER
-    - validar a tabela e os dados de forma a não permitir ações "destrutivas" com o admin
-    - na tabela apresentar nome do usertype em vez do ID
-    - na tabela personalizar a apresentação da imagem do utilizador
-    - na tabela -> ban com fontawesome
 
 ------------------------------------------------------------------------
 

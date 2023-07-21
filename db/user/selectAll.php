@@ -1,7 +1,7 @@
 <?php
 include('db/conn.php');
 
-$sql = "SELECT * FROM user";
+$sql = "SELECT user.id, user.email, user.username, user.last_login, user.banned, user.image, usertype.name FROM user, usertype WHERE usertype.id = user.usertype_id;";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -34,7 +34,7 @@ if ($result->num_rows > 0) {
                         <img class="img_table" src="img/users/<?=$row['image']?>" alt="">
                     <?php } ?>
                 </div>
-                <div class="col text-center mb-1"><?= $row['usertype_id'] ?></div>
+                <div class="col text-center mb-1"><?= $row['name'] ?></div>
             </div>
         <?php }
         ?>

@@ -77,23 +77,16 @@ include('db/user/selectbyidGET.php');
             </select>
         </div>
     </div>
-    <!-- COMPLETAR COM RESTANTES CAMPOS
-           
-            NAS OPÇÕES ABAIXO ADICIONAR BOTÕES PARA:
-            - RESET DA PASSWORD
-            - BANIR UTILIZADOR
-            - ALTERAR/REMOVER IMAGEM DO UTILIZADOR?
-            - ALTERAR USERTYPE
-    -->
 
-
+    <?php
+    if($id != $_SESSION['id']) {?>
     <div class="row">
         <div class="col-2">
             <a href="index.php?p=administration" class="btn btn-danger me-2">Cancel</a>
             <button class="btn btn-success">Save</button>
         </div>
         <div class="col text-center">
-            <a href="" class="btn btn-danger">Reset password</a>
+            <a href="db/user/resetPassword.php?id=<?= $row['id']?>&email=<?= $row['email']?>" class="btn btn-danger">Reset password</a>
             <a href="db/user/resetUserImage.php?id=<?= $row['id']?>" class="btn btn-primary mx-3">Reset user image</a>
             <!-- BAN -->
             <?php if ($row['banned'] == "") { ?>
@@ -106,6 +99,7 @@ include('db/user/selectbyidGET.php');
         </div>
         <div class="col-2 text-end"><a href="db/user/admin_delete.php?id=<?= $row['id']?>" class="btn btn-danger">Delete</a></div>
     </div>
+    <?php } ?>
     </form>
 
 

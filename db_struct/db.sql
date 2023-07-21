@@ -30,8 +30,8 @@ CREATE TABLE user(
     FOREIGN KEY (usertype_id) REFERENCES usertype(id)
 );
 
-INSERT INTO user(email,password,usertype_id) VALUES
-('admin@gmail.com',md5('password'),1),
-('teacher@gmail.com',md5('password'),2),
-('student@gmail.com',md5('password'),3);
+INSERT INTO user(email,password,username,image,usertype_id) VALUES
+('admin@gmail.com',md5('password'),'admin','u1.png',1),
+('teacher@gmail.com',md5('password'),'teacher',null,2),
+('student@gmail.com',md5('password'),'student',null,3);
 
