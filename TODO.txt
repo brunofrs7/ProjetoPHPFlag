@@ -2,16 +2,16 @@ LOGIN
     - recuperação de password antes de autenticar
     - manter sessão check me out
 
-ACCOUNT
-    - carregar imagem do utilizador
-    - alterar imagem do utilizador
-
 ADMINISTRATION
+    - inserir novo utilizador
     - CRUD: course
     - implementar relacionamento entre user e courses
 
 COURSES
-
+    - apresentar courses na páginas courses (card)
+    - mostrar course_details
+    - inscrever em curso
+    - alterar visibilidade de curso
 
 ------------------------------------------------------------------------
 
