@@ -29,4 +29,5 @@
     </div>
     <?php include('insertModal/modalInsertCourse.php') ?>
 </div>
+<?php include('db/course/selectAll.php')?>
 <hr>

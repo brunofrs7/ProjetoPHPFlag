@@ -25,3 +25,9 @@ footer{
 .img_account{
     width: 25%;
 }
+.fa-eye{
+    color: green;
+}
+.fa-eye-slash{
+    color: red;
+}

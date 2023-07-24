@@ -1,15 +1,19 @@
 LOGIN
-    - manter sessão check me out
+    X manter sessão check me out
 
 ADMINISTRATION
-    - CRUD: course
-    - implementar relacionamento entre user e courses
+    - insert course (modal)
+    - course_details (c/ update e delete)
+    - alterar visibilidade de curso (JS)
+    X implementar relacionamento entre user e courses - Enroll
 
 COURSES
-    - apresentar courses na páginas courses (card)
-    - mostrar course_details
+    - mostrar course_details p/ utilizador
     - inscrever em curso
-    - alterar visibilidade de curso
+
+INICIO
+    - barra de pesquisa
+    X filtros
 
 ------------------------------------------------------------------------
 
