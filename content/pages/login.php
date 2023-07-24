@@ -15,4 +15,6 @@
   <button type="submit" class="btn btn-secondary">Login</button>
   <br>
   <a href="index.php?p=register">Don't have an account? Sign up here!</a>
+  <br>
+  <a href="index.php?p=recover">Recover Password</a>
 </form>

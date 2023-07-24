@@ -1,9 +1,7 @@
 LOGIN
-    - recuperação de password antes de autenticar
     - manter sessão check me out
 
 ADMINISTRATION
-    - inserir novo utilizador
     - CRUD: course
     - implementar relacionamento entre user e courses
 

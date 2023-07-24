@@ -47,6 +47,7 @@ if ($result->num_rows == 1) {
             header('Location: ../../index.php?p=account');
     }
 } else {
+    //POPUP - login errado, apresentar possibilidade de ir para recuperar password
     header('Location: ../../index.php?p=login&r=loginerror');
 }
 $conn->close();

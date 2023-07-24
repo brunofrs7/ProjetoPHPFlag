@@ -7,6 +7,7 @@ if(isset($_GET['p'])){
     else if($page == "contact")                                 include('content/pages/contact.php');
     else if($page == "login"    && !isset($_SESSION['email']))  include('content/pages/login.php');
     else if($page == "register" && !isset($_SESSION['email']))  include('content/pages/register.php');
+    else if($page == "recover"  && !isset($_SESSION['email']))  include('content/pages/recover_password.php');
     else if($page == "account"  &&  isset($_SESSION['email']))  include('content/pages/account.php');
     else if($page == "logout"   &&  isset($_SESSION['email']))  include('content/pages/logout.php');
     else if(isset($_SESSION['usertype_id']) && $_SESSION['usertype_id'] == 1){
