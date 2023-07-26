@@ -54,9 +54,9 @@ if ($result->num_rows > 0) {
                 <div class="col text-center mb-1"><?= $row['price'] ?></div>
                 <div class="col text-center mb-1">
                 <?php if($row['visibility'] == 1){ ?>
-                    <i class="fa-solid fa-eye"></i> 
+                    <a href="db/course/changeVisibility.php?id=<?=$row['id']?>&v=0"><i class="fa-solid fa-eye"></i>
                 <?php }else{ ?>
-                    <i class="fa-solid fa-eye-slash"></i>    
+                    <a href="db/course/changeVisibility.php?id=<?=$row['id']?>&v=1"><i class="fa-solid fa-eye-slash"></i></a> 
                 <?php } ?>
                 </div>
             </div>

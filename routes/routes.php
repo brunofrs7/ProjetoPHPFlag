@@ -4,6 +4,7 @@ if(isset($_GET['p'])){
 
     if($page == "home")                                         include('content/pages/home.php');
     else if($page == "courses")                                 include('content/pages/courses.php');
+    else if($page == "search")                                  include('content/pages/search.php');
     else if($page == "contact")                                 include('content/pages/contact.php');
     else if($page == "login"    && !isset($_SESSION['email']))  include('content/pages/login.php');
     else if($page == "register" && !isset($_SESSION['email']))  include('content/pages/register.php');
@@ -14,6 +15,7 @@ if(isset($_GET['p'])){
         if($page == "administration")                           include('content/pages/administration.php');
         else if($page == "usertype_details")                    include('content/pages/usertype_details.php');
         else if($page == "user_details")                        include('content/pages/user_details.php');
+        else if($page == "course_details")                      include('content/pages/course_details.php');
     }
     else                                                        include('content/pages/404.php');
 }else{
